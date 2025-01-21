@@ -31,4 +31,4 @@ This project is licensed under the Apache License 2.0. You may use this software
 
 Copyright [2025] [WiseMinds.be]
 
-For more details, see the [LICENSE](LICENSE) file in this repository.
+For more details, see the [LICENSE](LICENSE.txt) file in this repository.
