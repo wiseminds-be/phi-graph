@@ -1,0 +1,256 @@
+--Models Format--
+
+	[domain][subdomain]-[origin][relationship type][structure][specific number]-[version]
+
+--Variables Format--
+
+	[domain][subdomain]-[Provenance][dimension]-[specific number]
+
+--Categorization--
+
+- Origin: How each equation or relationship is derived.
+	E = Experimental: Relationships or equations derived from experimental observations or empirical data, including heuristics and rules of thumb.
+	M = Model: Based on theoretical models or simulations that describe a phenomenon, including approximations that simplify complex relationships.
+	D = Definition: Fundamental definitions that are universally accepted in the field.
+	T = Temporary: Provisional equations or relations used in specific contexts or under certain assumptions.
+
+- Relationship type:
+	E = Equation (equality between two expressions).
+	I = Inequality (greater than, less than relations).
+	M = Membership (set memberships, e.g., element belonging to a set).
+
+- Structure:
+	D = Differential
+	A = Algebraic
+	I = Integral
+	F = Functional
+
+- Provenance:
+	S = Self
+	O = Other
+	C = Child
+	P = Parent
+	U = Universal
+
+- Specific Number: Identifies the specific relation or family of relations within the subdomain.
+
+- Version: Specifies revisions or alternative forms of the relation. You can leave this out if only one version exists at present.
+
+- Dimension: Specifies the dimensions of the variables (0 - scalar, 1 - vector, 2 - matrix, ...)
+
+- Domain and Subdomains:
+
+	[CH] Chemistry
+		[AC] Analytical Chemistry
+		[CP] Chemical Physics
+		[EC] Environmental Chemistry
+		[FC] Forensic Chemistry
+		[IC] Inorganic Chemistry
+		[OC] Organic Chemistry
+		[OM] Organo-metallic Chemistry
+		[PC] Physical Chemistry
+		[PO] Polymer Chemistry
+		[TC] Theoretical Chemistry (except Biochemistry—report in Biological and Biomedical Sciences)
+
+	[PH] Physics
+		[AC] Acoustics
+		[AM] Atomic/Molecular Physics
+		[CM] Condensed Matter and Materials Physics
+		[EP] Elementary Particle Physics
+		[MP] Mathematical Physics
+		[NP] Nuclear Physics
+		[OP] Optics
+		[OS] Optical Sciences
+		[PL] Plasma
+		[HT] High-Temperature Physics
+		[TH] Theoretical Physics
+			Models:
+				PHTH-MEA1: Newton's Second Law (PHTH-S1-5 = PHTH-S0-2 * PHTH-S1-4)
+				PHTH-MEA2: Newton's Universal Law of Gravitation (PHTH-S1-5 = PHTH-U0-1 * PHTH-S0-2 * PHTH-O0-2 / (PHTH-O1-2 - PHTH-S1-2) ^ 2))
+			Variables:
+				PHTH-S0-1: Self Time (t)
+				PHTH-O0-1: Other Time (t_i)
+				PHTH-C0-1: Child Time (t_C)
+				PHTH-P0-1: Parent Time (t_P)
+				PHTH-S1-2: Self Position (x)
+				PHTH-O1-2: Other Position (x_i)
+				PHTH-C1-2: Child Position (x)
+				PHTH-P1-2: Parent Position (x)
+				PHTH-S1-3: Self Velocity (v)
+				PHTH-O1-3: Other Velocity (v)
+				PHTH-C1-3: Child Velocity (v)
+				PHTH-P1-3: Parent Velocity (v)
+				PHTH-S1-4: Self Acceleration (a)
+				PHTH-O1-4: Other Acceleration (a)
+				PHTH-C1-4: Child Acceleration (a)
+				PHTH-P1-4: Parent Acceleration (a)
+				PHTH-S0-2: Self Mass (m)
+				PHTH-O0-2: Other Mass (m)
+				PHTH-C0-2: Child Mass (m)
+				PHTH-P0-2: Parent Mass (m)
+				PHTH-S1-5: Self Force (F)
+				PHTH-O1-5: Other Force (F)
+				PHTH-C1-5: Child Force (F)
+				PHTH-P1-5: Parent Force (F)
+				PHTH-U0-1: Universal Gravitation Constant (G)
+
+	[AT] Atmospheric Science & Meteorology
+		[AE] Aeronomy
+		[AC] Atmospheric Chemistry and Climatology
+		[AP] Atmospheric Physics and Dynamics
+		[EX] Extraterrestrial Atmospheres
+		[ME] Meteorology
+		[SW] Solar and Weather Modification
+
+	[GE] Geological and Earth Sciences
+		Earth & Planetary Sciences
+		Geochemistry
+		Geodesy and Gravity
+		Geology
+		Geomagnetism
+		Geophysics and Seismology
+		Hydrology and Water Resources
+		Minerology and Petrology
+		Paleomagnetism
+		Paleontology
+		Physical Geography
+		Stratigraphy and Sedimentation
+		Surveying
+
+	[OC] Ocean Sciences and Marine Sciences
+		Biological Oceanography
+		Geological Oceanography
+		Marine Biology
+		Marine Oceanography
+		Marine Sciences
+		Oceanography (chemical and physical)
+
+	[AG] Agricultural Sciences
+		Agricultural Business and Management
+		Agricultural Chemistry
+		Agricultural Production Operations
+		Animal Sciences
+		Applied Horticulture and Horticultural Business Services
+		Aquaculture
+		Food Science and Technology
+		International Agriculture
+		Plant Sciences
+		Soil Sciences
+		Veterinary Biomedical and Clinical Sciences
+		Veterinary Medicine
+		Wood Science
+
+	[BI] Biological and Biomedical Sciences
+		Allergies and Immunology
+		Biochemistry
+		Biophysics
+		Molecular Biology
+		Biogeography
+		Biology and Biomedical Sciences (general)
+		Biomathematics
+		Bioinformatics
+		Computational Biology
+		Biotechnology
+		Botany and Plant Biology
+		Cell/Cellular Biology and Anatomical Sciences
+		Epidemiology
+		Ecology
+		Population Biology
+		Food, nutrition, and wellness studies
+		Genetics
+		Microbiological Sciences and Immunology
+		Molecular Medicine
+		Neurobiology and Neuroscience
+		Pharmacology and Toxicology
+		Physiology
+		Pathology (and related sciences)
+		Zoology
+		Animal Biology
+
+	[HE] Health Sciences
+		Advanced/Graduate Dentistry and Oral Sciences
+		Allied Health and Medical Assisting Services
+		Bioethics
+		Medical Ethics
+		Clinical Medicine Research
+		Clinical/Medical Laboratory Science/Research and Allied Professions
+		Communication Disorders Sciences and Services
+		Dentistry
+		Dietetics and Clinical Nutrition Services
+		Health and Medical Administrative Services
+		Health/Medical Preparatory Programs
+		Gerontology (health sciences)
+		Kinesiology and Exercise Science
+		Medical Clinical Science
+		Graduate Medical Studies
+		Medical Illustration and Informatics
+		Medicine
+		Mental Health
+		Optometry
+		Osteopathic Medicine
+		Osteopathy
+		Pharmacy
+		Pharmaceutical Sciences and Administration
+		Podiatric Medicine
+		Podiatry
+		Public Health
+		Radiological Science
+		Registered Nursing
+		Nursing Administration
+		Nursing Research
+		Clinical Nursing
+		Rehabilitation and Therapeutic Professions
+		Zoology
+
+	[NR] Natural Resources and Conservation
+		Fishing and Fisheries Sciences and Management
+		Forestry
+		Natural Resources Conservation and Research
+		Natural Resources Management and Policy
+		Renewable Natural Resources
+		Wildlife and Wildlands Science and Management
+
+	[AP] Astronomy and Astrophysics
+		Astronomy
+		Astrophysics
+		Planetary Astronomy and Science
+
+	[MS] Materials Science
+		Materials Chemistry
+		Materials Science
+
+	[PS] Psychology
+	[CS] Computer Science
+		[AI] Artificial intelligence
+		[AM] Computer and information technology administration and management
+		[AP] Computer science, Computer software and media applications
+		[AN] Computer systems analysis
+		[NT] Computer systems networking and telecommunications
+		[DP] Data processing
+		[IS] Information sciences studies
+		[IT] Information technology
+	[EC] Economics
+		Agricultural Economics
+		Applied Economics
+		Business Development
+		Development Economics and International Development
+		Econometrics and Quantitative Economics
+		Industrial Economics
+		international Economics
+		Labor Economics
+		Managerial Economics
+		Natural Resources Economics
+		Public Finance and Fiscal Policy
+
+	[PO] Political Science and Government
+		Comparative Government
+		Government
+		Legal Systems
+		Political Economy
+		Political Science
+		Political Theory
+
+	[AN] Anthropology
+		Cultural Anthropology
+		Medical Anthropology
+		Physical and Biological Anthropology
